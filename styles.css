@@ -15,6 +15,15 @@ body {
   --icon-color: #6a737d;
   --border-color: #ff9a0045;
   --text-decoration-color: #ff9a00;
+  --skills-react-color: #cef6ff;
+  --skills-node-color: #e2f6e2;
+  --skills-ng-color: #ffe0dd;
+  --skills-styles-color: #e3effb;
+  --skills-base-color: #fdfdc4;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
@@ -166,8 +175,34 @@ body {
 }
 
 .skills__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills__item {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: var(--skills-base-color);
+}
+
+.skills__item--react {
+  background-color: var(--skills-react-color);
+}
+
+.skills__item--node {
+  background-color: var(--skills-node-color);
+}
+
+.skills__item--ng {
+  background-color: var(--skills-ng-color);
+}
+
+.skills__item--styles {
+  background-color: var(--skills-styles-color);
 }
 
 /* Experience and additional info styles */
